@@ -107,7 +107,7 @@ window.wheelzoom = (function(){
             e.preventDefault();
 
             if (e.deltaY) { // FireFox 17+ (IE9+, Chrome 31+?)
-                deltaY = -e.deltaY;
+                deltaY = +e.deltaY;
             } else if (e.wheelDelta) {
                 deltaY = e.wheelDelta;
             }
