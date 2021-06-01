@@ -5,7 +5,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <meta content="Research Results" name="description"/>
         <title>
-            Deep Combiner for Independent and Correlated Pixel Estimates
+            Post Reconstruction for Progressive Photon Mapping
         </title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css"/>
         <link href="utils/report.css" rel="stylesheet"/>
@@ -13,16 +13,13 @@
     <body>
         <div class="content" id="content">
             <h1 class="title">
-                Deep Combiner for Independent and Correlated Pixel Estimates (Supplementary Material)
+                Post Reconstruction for Progressive Photon Mapping (Supplementary Material)
             </h1>
             <p class="authors">
-                Jonghee Back<sup>1</sup>, Binh-Son Hua<sup>2, 3</sup>, Toshiya Hachisuka<sup>4</sup>, and Bochang Moon<sup>1</sup>
+                Hajin Choi<sup>1</sup>, and Bochang Moon<sup>1</sup>
             </p>
 			<p class="authors">
                 <sup>1</sup> GIST, South Korea,
-				<sup>2</sup> VinAi Research, Vietnam,
-				<sup>3</sup> VinUniversity, Vietnam,
-				<sup>4</sup> The University of Tokyo, Japan
             </p>
             <h2>
                 Overview
@@ -30,205 +27,73 @@
             <p>
             This supplemental material provides full resolution rendering of our method and previous methods. Please click on each scene to launch the interactive viewer that shows both visual and quantitative comparisons. 
             </p>
-            <p>
-            We use the following methods to generate correlated pixel estimates: NFOR [2] and KPCN denoisers [1], L1 reconstruction and L2 reconstruction in gradient-domain path tracing [5], common random number for each pixel (CRN). Additionally, we test two correlated pixel estimates, BCD [3] and PPM [4], which are not trained with our network.
-            </p>
-            <p>
-            We provide two equal-time comparisons with short-term (inserted figures in paper) and long-term. We also offer tables including samples per pixel (spp), running time and relMSE [6] of the results with epsilon 1e-2, which has been widely used for evaluating the quality of the rendered image. The unit of running time in the tables is second. The relMSE of each method is evaluated from the average of ten images rendered with different seeds.
-            </p>
             <h2>
-                Equal-Time Comparisons with Image Denoising (NFOR and KPCN)
+                Equal-Time Comparisons with PPM Methods (SPPM/CPPM)
             </h2>
             <div class="element-container">
                 <div class="report-preview">
-                    <a href="scenes_denoisers/bathroom/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/bathroom/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bathroom
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_denoisers/bookshelf/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/bookshelf/thumb.png"/>
+                    <a href="equaltime_ppm/bookshelf/index.html">
+                        <img class="report-thumb" src="equaltime_ppm/bookshelf/thumb.png"/>
                     </a>
                     <br/>
                     Bookshelf
                 </div>
                 <div class="report-preview">
-                    <a href="scenes_denoisers/kitchen/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/kitchen/thumb.png"/>
+                    <a href="equaltime_ppm/breakfast-room/index.html">
+                        <img class="report-thumb" src="equaltime_ppm/breakfast-room/thumb.png"/>
                     </a>
                     <br/>
-                    Kitchen
+                    Breakfast Room
                 </div>
                 <div class="report-preview">
-                    <a href="scenes_denoisers/conference/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/conference/thumb.png"/>
+                    <a href="equaltime_ppm/pool/index.html">
+                        <img class="report-thumb" src="equaltime_ppm/pool/thumb.png"/>
                     </a>
                     <br/>
-                    Conference
+                    Pool
                 </div>
-				<div class="report-preview">
-                    <a href="scenes_denoisers/living-room/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/living-room/thumb.png"/>
+                <div class="report-preview">
+                    <a href="equaltime_ppm/water/index.html">
+                        <img class="report-thumb" src="equaltime_ppm/water/thumb.png"/>
                     </a>
                     <br/>
-                    Living-room
-                </div>
-				<div class="report-preview">
-                    <a href="scenes_denoisers/veach-lamp/index.html">
-                        <img class="report-thumb" src="scenes_denoisers/veach-lamp/thumb.png"/>
-                    </a>
-                    <br/>
-                    Veach-lamp
+                    Water Caustic
                 </div>
             </div>
 			<h2>
-                Equal-Time Comparisons with Gradient-Domain Rendering (GPT-L1 and GPT-L2)
+                Equal-Time Comparisons with Deep-Combiner 
             </h2>
             <div class="element-container">
                 <div class="report-preview">
-                    <a href="scenes_gdr/bathroom/index.html">
-                        <img class="report-thumb" src="scenes_gdr/bathroom/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bathroom
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_gdr/bookshelf/index.html">
-                        <img class="report-thumb" src="scenes_gdr/bookshelf/thumb.png"/>
+                    <a href="equaltime_dc/bookshelf/index.html">
+                        <img class="report-thumb" src="equaltime_dc/bookshelf/thumb.png"/>
                     </a>
                     <br/>
                     Bookshelf
                 </div>
                 <div class="report-preview">
-                    <a href="scenes_gdr/kitchen/index.html">
-                        <img class="report-thumb" src="scenes_gdr/kitchen/thumb.png"/>
+                    <a href="equaltime_dc/breakfast-room/index.html">
+                        <img class="report-thumb" src="equaltime_dc/breakfast-room/thumb.png"/>
                     </a>
                     <br/>
-                    Kitchen
+                    Breakfast Room
                 </div>
                 <div class="report-preview">
-                    <a href="scenes_gdr/conference/index.html">
-                        <img class="report-thumb" src="scenes_gdr/conference/thumb.png"/>
+                    <a href="equaltime_dc/pool/index.html">
+                        <img class="report-thumb" src="equaltime_dc/pool/thumb.png"/>
                     </a>
                     <br/>
-                    Conference
+                    Pool
                 </div>
-				<div class="report-preview">
-                    <a href="scenes_gdr/living-room/index.html">
-                        <img class="report-thumb" src="scenes_gdr/living-room/thumb.png"/>
+                <div class="report-preview">
+                    <a href="equaltime_dc/water/index.html">
+                        <img class="report-thumb" src="equaltime_dc/water/thumb.png"/>
                     </a>
                     <br/>
-                    Living-room
-                </div>
-				<div class="report-preview">
-                    <a href="scenes_gdr/veach-lamp/index.html">
-                        <img class="report-thumb" src="scenes_gdr/veach-lamp/thumb.png"/>
-                    </a>
-                    <br/>
-                    Veach-lamp
+                    Water Caustic
                 </div>
             </div>
-			<h2>
-                Equal-Time Comparisons with Correlated Sampling (CRN)
-            </h2>
-            <div class="element-container">
-                <div class="report-preview">
-                    <a href="scenes_corr_sampling/bathroom/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/bathroom/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bathroom
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_corr_sampling/bookshelf/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/bookshelf/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bookshelf
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_corr_sampling/kitchen/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/kitchen/thumb.png"/>
-                    </a>
-                    <br/>
-                    Kitchen
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_corr_sampling/conference/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/conference/thumb.png"/>
-                    </a>
-                    <br/>
-                    Conference
-                </div>
-				<div class="report-preview">
-                    <a href="scenes_corr_sampling/living-room/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/living-room/thumb.png"/>
-                    </a>
-                    <br/>
-                    Living-room
-                </div>
-				<div class="report-preview">
-                    <a href="scenes_corr_sampling/veach-lamp/index.html">
-                        <img class="report-thumb" src="scenes_corr_sampling/veach-lamp/thumb.png"/>
-                    </a>
-                    <br/>
-                    Veach-lamp
-                </div>
-            </div>
-			<h2>
-                Equal-Time Comparisons with Untrained Correlated Pixel Estimates (BCD)
-            </h2>
-            <div class="element-container">
-                <div class="report-preview">
-                    <a href="scenes_untrained_bcd/bathroom/index.html">
-                        <img class="report-thumb" src="scenes_untrained_bcd/bathroom/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bathroom
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_untrained_bcd/bookshelf/index.html">
-                        <img class="report-thumb" src="scenes_untrained_bcd/bookshelf/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bookshelf
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_untrained_bcd/kitchen/index.html">
-                        <img class="report-thumb" src="scenes_untrained_bcd/kitchen/thumb.png"/>
-                    </a>
-                    <br/>
-                    Kitchen
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_untrained_bcd/conference/index.html">
-                        <img class="report-thumb" src="scenes_untrained_bcd/conference/thumb.png"/>
-                    </a>
-                    <br/>
-                    Conference
-                </div>
-            </div>
-			<h2>
-                Equal-Time Comparisons with Untrained Correlated Pixel Estimates (PPM)
-            </h2>
-            <div class="element-container">
-                <div class="report-preview">
-                    <a href="scenes_untrained_ppm/bathroom/index.html">
-                        <img class="report-thumb" src="scenes_untrained_ppm/bathroom/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bathroom
-                </div>
-                <div class="report-preview">
-                    <a href="scenes_untrained_ppm/bookshelf/index.html">
-                        <img class="report-thumb" src="scenes_untrained_ppm/bookshelf/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bookshelf
-                </div>
-            </div>
+			
 			<h2>
             References
             </h2>
