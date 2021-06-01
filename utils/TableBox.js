@@ -69,21 +69,14 @@ var TableBox = function(parent, title, stats) {
             td.appendChild(document.createTextNode(stats[i]['series'][j]['label']))
             tr.appendChild(td);
 
-            var err = stats[i]['series'][j]['data'].map(parseFloat);
+            var err = stats[i]['series'][j]['data'];
             percent = 90 / stats[i]['series'][j]['data'].length
             
             for (var k = 0; k < stats[i]['series'][j]['data'].length; ++k) {
                 var td = document.createElement("td");
                 td.style = `width: ${percent}%;`
                 td.className = "stats";
-                var valueStr = err[k].toFixed(4).toString();
-				if (stats[i]['series'][j]['label'] == "Time") {
-					valueStr = err[k].toFixed(0).toString();
-				}
-				if (stats[i]['series'][j]['label'] == "Passes") {
-					valueStr = err[k].toFixed(0).toString();
-				}
-                td.appendChild(document.createTextNode(valueStr.replace("-", "−")))
+                td.appendChild(document.createTextNode(err[k]))
                 tr.appendChild(td);
             }
             tbody.appendChild(tr);
