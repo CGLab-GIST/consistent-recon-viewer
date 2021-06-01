@@ -1,129 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-        <meta content="Research Results" name="description"/>
-        <title>
-            Post Reconstruction for Progressive Photon Mapping
-        </title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css"/>
-        <link href="utils/report.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <div class="content" id="content">
-            <h1 class="title">
-                Post Reconstruction for Progressive Photon Mapping (Supplementary Material)
-            </h1>
-            <p class="authors">
-                Hajin Choi<sup>1</sup>, and Bochang Moon<sup>1</sup>
-            </p>
-			<p class="authors">
-                <sup>1</sup> GIST, South Korea,
-            </p>
-            <h2>
-                Overview
-            </h2>
-            <p>
-            This supplemental material provides full resolution rendering of our method and previous methods. Please click on each scene to launch the interactive viewer that shows both visual and quantitative comparisons. 
-            </p>
-            <h2>
-                Equal-Time Comparisons with PPM Methods (SPPM/CPPM)
-            </h2>
-            <div class="element-container">
-                <div class="report-preview">
-                    <a href="equaltime_ppm/bookshelf/index.html">
-                        <img class="report-thumb" src="equaltime_ppm/bookshelf/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bookshelf
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_ppm/breakfast-room/index.html">
-                        <img class="report-thumb" src="equaltime_ppm/breakfast-room/thumb.png"/>
-                    </a>
-                    <br/>
-                    Breakfast Room
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_ppm/pool/index.html">
-                        <img class="report-thumb" src="equaltime_ppm/pool/thumb.png"/>
-                    </a>
-                    <br/>
-                    Pool
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_ppm/water/index.html">
-                        <img class="report-thumb" src="equaltime_ppm/water/thumb.png"/>
-                    </a>
-                    <br/>
-                    Water Caustic
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Research Results" name="description" />
+    <title>
+        Consistent Post Reconstruction for Progressive Photon Mapping
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css" />
+    <link href="utils/report.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content" id="content">
+        <h1 class="title">
+            Consistent Post Reconstruction for Progressive Photon Mapping (Supplementary Material)
+        </h1>
+        <p class="authors">
+            Hajin Choi<sup>1</sup>, and Bochang Moon<sup>1</sup>
+        </p>
+        <p class="authors">
+            <sup>1</sup> Gwangju Institute of Science and Technology (GIST), South Korea,
+        </p>
+        <h2>
+            Overview
+        </h2>
+        <p>
+            This supplemental material provides full resolution rendering of our method and previous methods. Please
+            click on each scene to launch the interactive viewer that shows both visual and quantitative comparisons.
+        </p>
+        <h2>
+            Equal-Time Comparisons with PPM Methods (SPPM/CPPM)
+        </h2>
+        <div class="element-container">
+            <div class="report-preview">
+                <a href="equaltime_ppm/bookshelf/index.html">
+                    <img class="report-thumb" src="equaltime_ppm/bookshelf/thumb.png" />
+                </a>
+                <br />
+                Bookshelf
             </div>
-			<h2>
-                Equal-Time Comparisons with Deep-Combiner 
-            </h2>
-            <div class="element-container">
-                <div class="report-preview">
-                    <a href="equaltime_dc/bookshelf/index.html">
-                        <img class="report-thumb" src="equaltime_dc/bookshelf/thumb.png"/>
-                    </a>
-                    <br/>
-                    Bookshelf
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_dc/breakfast-room/index.html">
-                        <img class="report-thumb" src="equaltime_dc/breakfast-room/thumb.png"/>
-                    </a>
-                    <br/>
-                    Breakfast Room
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_dc/pool/index.html">
-                        <img class="report-thumb" src="equaltime_dc/pool/thumb.png"/>
-                    </a>
-                    <br/>
-                    Pool
-                </div>
-                <div class="report-preview">
-                    <a href="equaltime_dc/water/index.html">
-                        <img class="report-thumb" src="equaltime_dc/water/thumb.png"/>
-                    </a>
-                    <br/>
-                    Water Caustic
-                </div>
+            <div class="report-preview">
+                <a href="equaltime_ppm/breakfast-room/index.html">
+                    <img class="report-thumb" src="equaltime_ppm/breakfast-room/thumb.png" />
+                </a>
+                <br />
+                Breakfast Room
             </div>
-			
-			<h2>
-            References
-            </h2>
-			<p>
-            [1] Steve Bako, Thijs Vogels, Brian Mcwilliams, Mark Meyer, Jan Novák, Alex Harvill, Pradeep Sen, Tony Derose, and Fabrice Rousselle. 2017. Kernel-Predicting Convolutional Networks for Denoising Monte Carlo Renderings. ACM Trans. Graph. 36, 4, Article 97 (2017), 14 pages
-            </p>
-			<p>
-            [2] Benedikt Bitterli, Fabrice Rousselle, Bochang Moon, José A. Iglesias-Guitián, David Adler, Kenny Mitchell, Wojciech Jarosz, and Jan Novák. 2016. Nonlinearly Weighted First-order Regression for Denoising Monte Carlo Renderings. Computer Graphics Forum 35, 4 (2016), 107–117
-            </p>
-			<p>
-            [3] Malik Boughida and Tamy Boubekeur. 2017. Bayesian Collaborative Denoising for Monte Carlo Rendering. Computer Graphics Forum 36, 4 (2017), 137–153
-            </p>
-			<p>
-            [4] Toshiya Hachisuka, Shinji Ogaki, and Henrik Wann Jensen. 2008. Progressive Photon Mapping. ACM Trans. Graph. 27, 5, Article 130 (2008), 8 pages
-            </p>
-			<p>
-            [5] Markus Kettunen, Marco Manzi, Miika Aittala, Jaakko Lehtinen, Frédo Durand, and Matthias Zwicker. 2015. Gradient-domain Path Tracing. ACM Trans. Graph. 34, 4, Article 123 (2015), 13 pages
-            </p>
-			<p>
-            [6] Fabrice Rousselle, Claude Knaus, and Matthias Zwicker. 2011. Adaptive Sampling and Reconstruction Using Greedy Error Minimization. ACM Trans. Graph. 30, 6, Article 159 (2011), 12 pages
-            </p>
-            <h2>
-            Acknowledgements
-            </h2>
-			<p>
-            We thank the following authors and artists for the tested scenes: nacimus (Bathroom), Tiziano Portenier (Bookshelf), Anton Kaplanyan (Kitchen), Anat Grynberg and Greg Ward (Conference), Jay-Artist (Living-room) and Benedikt Bitterli (Veach-lamp).
-            </p>
-			<p>
-            We also thank Joey Litalien, Jan Novák and Benedikt Bitterli for the interactive viewer.
-            </p>
+            <div class="report-preview">
+                <a href="equaltime_ppm/pool/index.html">
+                    <img class="report-thumb" src="equaltime_ppm/pool/thumb.png" />
+                </a>
+                <br />
+                Pool
+            </div>
+            <div class="report-preview">
+                <a href="equaltime_ppm/water/index.html">
+                    <img class="report-thumb" src="equaltime_ppm/water/thumb.png" />
+                </a>
+                <br />
+                Water Caustic
+            </div>
         </div>
-    </body>
+        <h2>
+            Equal-Time Comparisons with Deep-Combiner
+        </h2>
+        <div class="element-container">
+            <div class="report-preview">
+                <a href="equaltime_dc/bookshelf/index.html">
+                    <img class="report-thumb" src="equaltime_dc/bookshelf/thumb.png" />
+                </a>
+                <br />
+                Bookshelf
+            </div>
+            <div class="report-preview">
+                <a href="equaltime_dc/breakfast-room/index.html">
+                    <img class="report-thumb" src="equaltime_dc/breakfast-room/thumb.png" />
+                </a>
+                <br />
+                Breakfast Room
+            </div>
+            <div class="report-preview">
+                <a href="equaltime_dc/pool/index.html">
+                    <img class="report-thumb" src="equaltime_dc/pool/thumb.png" />
+                </a>
+                <br />
+                Pool
+            </div>
+            <div class="report-preview">
+                <a href="equaltime_dc/water/index.html">
+                    <img class="report-thumb" src="equaltime_dc/water/thumb.png" />
+                </a>
+                <br />
+                Water Caustic
+            </div>
+        </div>
+
+        <h2>
+            Acknowledgements
+        </h2>
+        <p>
+            Thank to Joey Litalien, Jan Novák and Benedikt Bitterli for the this viewer.
+        </p>
+    </div>
+</body>
+
 </html>
