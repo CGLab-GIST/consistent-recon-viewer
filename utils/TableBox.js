@@ -64,31 +64,25 @@ var TableBox = function(parent, title, stats) {
             tr.className = "stats";
             var td = document.createElement("td");
             td.className = "stats";
-            if (j == 0) {
-                td.width = 100;
-            }
+            td.style='width: 10%; text-align:right;'
+
             td.appendChild(document.createTextNode(stats[i]['series'][j]['label']))
             tr.appendChild(td);
 
             var err = stats[i]['series'][j]['data'].map(parseFloat);
-            var bestIdx = err.indexOf(Math.min.apply(null, err.map(Number)));
-
+            percent = 90 / stats[i]['series'][j]['data'].length
+            
             for (var k = 0; k < stats[i]['series'][j]['data'].length; ++k) {
                 var td = document.createElement("td");
+                td.style = `width: ${percent}%;`
                 td.className = "stats";
-                var valueStr = err[k].toFixed(9).toString();
+                var valueStr = err[k].toFixed(4).toString();
 				if (stats[i]['series'][j]['label'] == "Time") {
 					valueStr = err[k].toFixed(0).toString();
 				}
 				if (stats[i]['series'][j]['label'] == "Passes") {
 					valueStr = err[k].toFixed(0).toString();
 				}
-				if (valueStr == "NaN") {
-					valueStr = "-"
-				}
-                // if (k == bestIdx) {
-                //     td.className += " best-stat"
-                // }
                 td.appendChild(document.createTextNode(valueStr.replace("-", "−")))
                 tr.appendChild(td);
             }

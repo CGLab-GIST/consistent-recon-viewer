@@ -255,7 +255,7 @@ table.stats {
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
-    min-width: 1152px;
+    width: 100%;
     padding-bottom: 0px;
 }
 
@@ -287,7 +287,7 @@ th.stats {
     border-top: 1px solid #CCC;
 }
 
-th.stats:first-child { border-left: 1px solid #CCC; border-top-left-radius: 5px; width: 150px; }
+th.stats:first-child { border-left: 1px solid #CCC; border-top-left-radius: 5px; }
 th.stats:last-child { border-right: 1px solid #CCC; border-top-right-radius: 5px; }
 td.stats:last-child { border-right: 1px solid #CCC; }
 tr.stats:last-child>td { border-bottom: 1px solid #CCC; }
@@ -295,7 +295,7 @@ tr.stats:last-child>td:first-child { border-bottom-left-radius: 5px; }
 tr.stats:last-child>td:last-child  { border-bottom-right-radius: 5px; }
 
 td.stats {
-    text-align: right;
+    text-align: center;
     padding: 0.5em 1em;
     border-left: 1px solid #CCC;
     border-width: 0 0 0 1px;
