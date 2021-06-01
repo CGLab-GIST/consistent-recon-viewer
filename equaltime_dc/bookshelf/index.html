@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Rendering Results" name="description">
-<title>Bookshelf</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet" type="text/css">
-<link href="../../utils/report.css" rel="stylesheet">
-<script src="https://kit.fontawesome.com/b3ad2626f1.js"></script>
-<script src="./data.js"></script>
-<script src="../../utils/ImageBox.js"></script>
-<script src="../../utils/TableBox.js"></script>
-</link></link></meta></meta></meta></head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Rendering Results" name="description">
+    <title>Bookshelf</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet" type="text/css">
+    <link href="../../utils/report.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3ad2626f1.js"></script>
+    <script src="./data.js"></script>
+    <script src="../../utils/ImageBox.js"></script>
+    <script src="../../utils/TableBox.js"></script>
+    </link>
+    </link>
+    </meta>
+    </meta>
+    </meta>
+</head>
 <script type="text/javascript">
 
     function setup() {
@@ -30,16 +36,18 @@
         help.className = "help";
         box.appendChild(help);
 
-        new ImageBox(content, data['imageBoxes'] );
+        new ImageBox(content, data['imageBoxes']);
         new TableBox(content, "Statistics", data["stats"]);
     }
 </script>
+
 <body onload="setup();">
-<div class="content scene-content" id="content">
-<div class="image-box" id="image-box">
-<p><a href="../../index.html"><i class="fas fa-arrow-left"></i> Back to index</a></p>
-<h1 class="title">Bookshelf</h1>
-</div>
-</div>
+    <div class="content scene-content" id="content">
+        <div class="image-box" id="image-box">
+            <p><a href="../../index.html"><i class="fas fa-arrow-left"></i> Back to index</a></p>
+            <h1 class="title">Bookshelf</h1>
+        </div>
+    </div>
 </body>
+
 </html>
