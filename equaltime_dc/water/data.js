@@ -30,7 +30,7 @@ const data =
                     "image": "images/equal_water_ourssppm.png"
                 },
                 {
-                    "title": "Reference (30K passes)",
+                    "title": "Reference (30K iterations)",
                     "version": "-",
                     "image": "images/water_ref.png"
                 }
@@ -48,7 +48,7 @@ const data =
             ],
             "series": [
 				{
-                    "label": "Passes",
+                    "label": "Iterations",
                     "data": [
                         "2200",
                         "265x4",

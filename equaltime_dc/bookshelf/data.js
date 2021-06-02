@@ -30,7 +30,7 @@ const data =
                     "image": "images/equal_bookshelf_ourssppm.png"
                 },
                 {
-                    "title": "Reference (30K passes)",
+                    "title": "Reference (30K iterations)",
                     "version": "-",
                     "image": "images/bookshelf_ref.png"
                 }
@@ -48,7 +48,7 @@ const data =
             ],
             "series": [
 				{
-                    "label": "Passes",
+                    "label": "Iterations",
                     "data": [
                         "1350",
                         "150x4",

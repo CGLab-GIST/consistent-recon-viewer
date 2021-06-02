@@ -25,7 +25,7 @@ const data =
                     "image": "images/equal_pool_ourscppm.png"
                 },
                 {
-                    "title": "Reference (1M passes)",
+                    "title": "Reference (1M iterations)",
                     "version": "-",
                     "image": "images/pool_ref.png"
                 }
@@ -43,7 +43,7 @@ const data =
             ],
             "series": [
 				{
-                    "label": "Passes",
+                    "label": "Iterations",
                     "data": [
                         "8500",
                         "7050",

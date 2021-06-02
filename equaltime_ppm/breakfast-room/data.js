@@ -25,7 +25,7 @@ const data =
                     "image": "images/equal_breakfast-room_ourscppm.png"
                 },
                 {
-                    "title": "Reference (30K passes)",
+                    "title": "Reference (30K iterations)",
                     "version": "-",
                     "image": "images/breakfast-room_ref.png"
                 }
@@ -43,7 +43,7 @@ const data =
             ],
             "series": [
 				{
-                    "label": "Passes",
+                    "label": "Iterations",
                     "data": [
                         "5750",
                         "5050",

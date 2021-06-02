@@ -241,7 +241,7 @@ var ImageBox = function (parent, config) {
     // box.appendChild(h1);
 
     // var help = document.createElement('div');
-    // help.appendChild(document.createTextNode("Use mouse wheel to zoom in/out, click and drag to pan. Press keys [1], [2], ... to switch between individual images."));
+    // help.appendChild(document.createTextNode("Use mouse wheel to zoom in/out, click and drag to translate the images. Press number keys (e.g., 1, 2, and 3) to switch between images."));
     // help.className = "help";
     // box.appendChild(help);
 
