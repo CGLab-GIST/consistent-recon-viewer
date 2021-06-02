@@ -55,7 +55,7 @@ const data =
                     "label": "Time",
                     "data": [
                         "487 s",
-                        "482 s",
+                        "483 s",
                         "481 s",
                         "480 s"
                     ]
