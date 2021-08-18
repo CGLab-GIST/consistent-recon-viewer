@@ -25,7 +25,7 @@ const data =
                     "image": "images/equal_breakfast-room_ourscppm.png"
                 },
                 {
-                    "title": "Reference (30K iterations)",
+                    "title": "Reference",
                     "version": "-",
                     "image": "images/breakfast-room_ref.png"
                 }

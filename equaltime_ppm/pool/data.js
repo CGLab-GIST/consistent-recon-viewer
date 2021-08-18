@@ -25,7 +25,7 @@ const data =
                     "image": "images/equal_pool_ourscppm.png"
                 },
                 {
-                    "title": "Reference (1M iterations)",
+                    "title": "Reference",
                     "version": "-",
                     "image": "images/pool_ref.png"
                 }

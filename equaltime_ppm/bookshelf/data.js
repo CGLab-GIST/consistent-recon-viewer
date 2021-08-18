@@ -25,7 +25,7 @@ const data =
                     "image": "images/equal_bookshelf_ourscppm.png"
                 },
                 {
-                    "title": "Reference (30K iterations)",
+                    "title": "Reference",
                     "version": "-",
                     "image": "images/bookshelf_ref.png"
                 }

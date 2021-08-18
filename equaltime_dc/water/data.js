@@ -30,7 +30,7 @@ const data =
                     "image": "images/equal_water_ourssppm.png"
                 },
                 {
-                    "title": "Reference (30K iterations)",
+                    "title": "Reference",
                     "version": "-",
                     "image": "images/water_ref.png"
                 }
